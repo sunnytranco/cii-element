@@ -1,12 +1,13 @@
 # CII Element
 Custom Sass for Element in CII
 
-##Install
-Using NPM to install this package
+## Install
 
-`npm install -D https://github.com/sunnytranco/cii-element.git`
+### Using NPM to install this package
 
-Replace default css of element
+`npm install -D git+https://github.com/sunnytranco/cii-element.git`
+
+### Replace default css of element
 
 ```sass
 // Import customize sass from CII Element
@@ -17,5 +18,5 @@ Replace default css of element
 
 ```
 
-##Update
+## Update
 Whenever an update available, you guys will be notified on Slack. Keep it up to date yo.
