@@ -1,0 +1,35 @@
+@import '../foundation/colors';
+@import '../foundation/spacing';
+
+$prefix: 'cii' !default;
+
+// COLOR THEME
+// Brand
+$brand-primary: $color__azures-300;
+$brand-secondary: $color__azures-100;
+$brand-tertiary: $color__yellows-400;
+
+// UI
+$ui-white: $color__neutrals-0;
+$ui-light: $color__neutrals-20;
+$ui-dark: $color__neutrals-300;
+
+// Typography
+$text-primary: $color__neutrals-800;
+$text-secondary: $color__neutrals-300;
+$text-tertiary: $color__neutrals-60;
+
+// Support
+$support-warning: $color__yellows-300;
+$support-success: $color__greens-300;
+$support-danger: $color__reds-300;
+$support-info: $color__blues-100;
+$support-link: $color__blues-400;
+$support-help: $color__purples-300;
+
+// Border
+$border-base: $color__neutrals-40;
+$border-light: $color__neutrals-30;
+$border-lighter: $color__neutrals-20;
+$border-xlight: $color__neutrals-10;
+$border-none: none;

@@ -1,0 +1,77 @@
+@import '../common/vars';
+
+$font-family-sparkle: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+
+$base-font-size: 16px !default; // Default, Use with em() and rem() functions
+
+$typescale-map: (
+  'giga': 2.5rem,
+  'mega': 2.125rem,
+  'alpha': 1.75rem,
+  'beta': 1.5rem,
+  'gamma': 1.25rem,
+  'delta': 1rem,
+  'epsilon': 0.875rem,
+  'zeta': 0.75rem,
+  'omega': 0.625rem,
+  'caption': 0.75rem,
+  'legal': 0.625rem,
+  'p': 0.875rem
+);
+
+@mixin typescale($size) {
+  @if map-has-key($typescale-map, $size) {
+    font-size: map-get($typescale-map, $size);
+  } @else {
+    @warn 'This is not a step of the Sparkle Type Scale!';
+  }
+}
+
+@function rem($px) {
+  @return ($px / $base-font-size) * 1rem;
+}
+
+@function em($px) {
+  @return ($px / $base-font-size) * 1em;
+}
+
+// There are two line heights to choose from. One for headings and one for paragraph text
+@mixin line-height($el) {
+  @if $el == 'heading' {
+    line-height: 1.25;
+  } @else if $el == 'paragraph' {
+    line-height: 1.5;
+  } @else {
+    @warn 'Invalid argument used for @mixin line-height($el) . Please use 'heading' or 'paragraph'.';
+  }
+}
+
+// Only applied to bold weight text
+@mixin font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@mixin letter-spacing {
+  letter-spacing: 0;
+}
+
+$font-size-map: (
+  '40': 2.5rem,
+  '34': 2.125rem,
+  '28': 1.75rem,
+  '24': 1.5rem,
+  '20': 1.125rem,
+  '16': 1rem,
+  '14': 0.875rem,
+  '12': 0.75rem,
+  '10': 0.625rem
+);
+
+@mixin font-size($size) {
+  @if map-has-key($font-size-map, $size) {
+    font-size: map-get($font-size-map, $size);
+  } @else {
+    @warn 'This is not a step of the Sparkle Type Scale! Valid sizes are 10, 12, 14, 16, 20, 28, 34, 40';
+  }
+}

@@ -1,0 +1,17 @@
+@import 'colors';
+
+//   Layer                 ||  Use for
+//   ==========================================
+//   Z50                   ||  Base
+//   Z100                  ||  Card on board
+//   Z200                  ||  Inline dialogs & dropdowns
+//   Z300                  ||  Modals
+//   Z400                  ||  Flag messages
+//   ==========================================
+
+// BOX SHADOWS
+$box-shadow__depths-50: 0 0 1px 0 $color__stencils-100 !default;
+$box-shadow__depths-100: 0 0 0 1px $color__stencils-40, 0 1px 1px 0 $color__stencils-70 !default;
+$box-shadow__depths-200: 0 0 0 1px $color__stencils-40, 0 3px 6px 0 $color__stencils-70 !default;
+$box-shadow__depths-300: 0 0 0 1px $color__stencils-40, 0 6px 10px 0 $color__stencils-70 !default;
+$box-shadow__depths-400: 0 0 0 1px $color__stencils-40, 0 0 24px 32px 0 $color__stencils-70 !default;

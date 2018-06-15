@@ -1,0 +1,22 @@
+@import 'colors';
+@import 'vars';
+@import 'mixins';
+@import 'typography';
+@import 'flag__reset';
+@import 'import-once';
+
+@mixin flag__body {
+  body {
+    @include reset;
+    font-family: $font-family-sparkle;
+    color: $color__neutrals-800;
+    background-color: $color__neutrals-20;
+    line-height: 1;
+  }
+}
+
+@include exports('flag__body') {
+  @if global-variable-exists('flag__body') == false or $flag__body == true {
+    @include flag__body;
+  }
+}

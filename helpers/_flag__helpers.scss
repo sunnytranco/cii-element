@@ -1,0 +1,32 @@
+@import 'vars';
+@import 'flag__reset';
+@import 'typography';
+@import 'import-once';
+
+@mixin flag-helpers {
+  .#{$prefix}__visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    visibility: visible;
+    white-space: nowrap;
+  }
+
+  .#{$prefix}__body {
+    @include reset;
+    color: $text-01;
+    background-color: $ui-02;
+    line-height: 1;
+  }
+}
+
+@include exports('flag__helpers') {
+  @if global-variable-exists('flag__helpers') == false or $flag__helpers == true {
+    @include flag-helpers;
+  }
+}

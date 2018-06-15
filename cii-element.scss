@@ -1,0 +1,105 @@
+// GLOBAL
+
+$flag__icons: false !default;
+$flag__helpers: false !default;
+$flag__body: false !default;
+$flag__reset: false !default;
+$flag__typography: true !default;
+
+@import './common/vars';
+@import './common/import-once';
+@import './common/mixins';
+@import './foundation/colors';
+@import './foundation/layer';
+@import './foundation/spacing';
+@import './foundation/measure';
+@import './foundation/typography';
+@import './helpers/flag__reset';
+@import './helpers/flag__icons';
+@import './helpers/flag__helpers';
+@import './helpers/flag__body';
+@import './helpers/flag__typography';
+
+
+// CUSTOMIZE ELEMENT THEME
+
+// Colors
+$--color-primary: $brand-primary;
+$--color-success: $support-success;
+$--color-warning: $support-warning;
+$--color-danger: $support-danger;
+$--color-info: $support-info;
+
+$--color-text-primary: $text-primary;
+$--color-text-regular: $text-primary;
+$--color-text-secondary: $text-secondary;
+$--color-text-placeholder: $text-secondary;
+
+// Links
+$--link-color: $support-link;
+$--link-hover-color: $color__blues-500;
+
+// Background
+$--background-color-base: $ui-white;
+
+// Border
+$--border-color-base: $border-base;
+$--border-color-light: $border-light;
+$--border-color-lighter: $border-lighter;
+$--border-color-extra-light: $border-xlight;
+$--border-color-hover: $text-tertiary;
+
+// Box-shadow
+$--box-shadow-base: $box-shadow__depths-200;
+$--box-shadow-dark: $box-shadow__depths-300;
+$--box-shadow-light: $box-shadow__depths-100;
+
+// Font
+$--font-size-small: 12px;
+$--font-size-large: 16px;
+$--font-color-disabled-base: $text-tertiary;
+$--font-weight-primary: 400;
+$--font-line-height-primary: 1.25;
+
+// Disable Base
+$--disabled-fill-base: $ui-light;
+$--disabled-color-base: $text-tertiary;
+
+// Icon
+$--icon-color: $ui-dark;
+$--icon-color-base: $brand-primary;
+
+// Select
+$--select-input-focus-background: $support-info;
+$--select-option-selected-hover: $ui-light;
+
+
+// Input
+$--input-width: $input__lengths-md;
+$--input-max-width: $input__lengths-xl;
+
+$--input-focus-border: $support-info;
+
+// Button
+$--button-padding-horizontal: 32px;
+
+$--button-default-fill: $ui-light;
+$--button-default-border: $ui-light;
+
+$--button-disabled-color: $text-tertiary;
+$--button-disabled-fill: $ui-light;
+$--button-disabled-border: $ui-light;
+
+$--button-primary-border: $support-link;
+$--button-primary-fill: $support-link;
+
+// Switch
+$--switch-on-color: $support-success;
+$--switch-off-color: $ui-dark;
+$--switch-disabled-color: $ui-light;
+$--switch-disabled-text-color: $text-tertiary;
+
+
+
+// 🔥Icon font path, required
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
