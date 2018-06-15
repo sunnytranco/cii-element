@@ -1,7 +1,7 @@
-@import 'vars';
+@import '../common/vars';
+@import '../common/import-once';
+@import '../foundation/typography';
 @import 'flag__reset';
-@import 'typography';
-@import 'import-once';
 
 @mixin flag-helpers {
   .#{$prefix}__visually-hidden {

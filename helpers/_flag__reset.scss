@@ -1,4 +1,4 @@
-@import 'import-once';
+@import '../common/import-once';
 
 @mixin reset {
   @if global-variable-exists(flag__reset) == false or $flag__reset == false {

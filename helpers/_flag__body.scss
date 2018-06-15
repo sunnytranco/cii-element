@@ -1,9 +1,9 @@
-@import 'colors';
-@import 'vars';
-@import 'mixins';
-@import 'typography';
+@import '../common/vars';
+@import '../common/mixins';
+@import '../common/import-once';
+@import '../foundation/colors';
+@import '../foundation/typography';
 @import 'flag__reset';
-@import 'import-once';
 
 @mixin flag__body {
   body {

@@ -1,8 +1,8 @@
-@import 'colors';
-@import 'vars';
-@import 'typography';
+@import '../common/vars';
+@import '../common/import-once';
+@import '../foundation/colors';
+@import '../foundation/typography';
 @import 'flag__reset';
-@import 'import-once';
 
 @mixin typography {
     // Heading
