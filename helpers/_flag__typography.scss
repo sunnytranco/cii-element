@@ -83,8 +83,22 @@
       font-weight: 400;
     }
   
-    .#{$prefix}__type-p {
-      @include typescale('p');
+    .#{$prefix}__type-desc {
+      @include typescale('desc');
+      @include reset;
+      @include line-height('paragraph');
+      font-weight: 400;
+    }
+  
+    .#{$prefix}__type-base {
+      @include typescale('base');
+      @include reset;
+      @include line-height('paragraph');
+      font-weight: 400;
+    }
+  
+    .#{$prefix}__type-extend {
+      @include typescale('extend');
       @include reset;
       @include line-height('paragraph');
       font-weight: 400;
