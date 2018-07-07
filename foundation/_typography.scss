@@ -16,7 +16,9 @@ $typescale-map: (
   'omega': 0.625rem,
   'caption': 0.75rem,
   'legal': 0.625rem,
-  'p': 0.875rem
+  'desc': 0.875rem,
+  'base': 1rem,
+  'extend': 1.25rem
 );
 
 @mixin typescale($size) {
